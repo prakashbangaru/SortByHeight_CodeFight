@@ -23,6 +23,7 @@ int partition(arr_integer a,int low, int high){
           }
           while(a.arr[right]==-1){
                right--;
+               pivotValue=&(a.arr[right]);
           }
           while(a.arr[left]<(*pivotValue)){
                left++;
